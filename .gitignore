@@ -257,5 +257,6 @@ dmypy.json
 # Cython debug symbols
 cython_debug/
 
+# Dev tools
 jstools
 jstools/
