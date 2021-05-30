@@ -1,11 +1,14 @@
 {% load static %}
 <!DOCTYPE html>
+
 <html lang="en">
+
   <head>
     <meta name="theme-color" content="#111827" />
     <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
+    <link rel="icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="theme-color" content="currentcolor" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ReBuild : The online resume builder.</title>
     <link rel="stylesheet" href="{% static 'css/style.min.css' %}" />
@@ -29,7 +32,7 @@
           <!-- logo -->
           <div>
             <a
-              href="#"
+              href="/"
               class="flex items-center py-5 px-2 text-gray-100 hover:text-white"
             >
               <svg
@@ -53,21 +56,21 @@
           <!-- primary nav -->
           <div class="hidden lg:flex items-center space-x-1">
             <a
-              href="#templates"
+              href="/#templates"
               class="py-5 px-3 text-gray-400 hover:text-white"
               >Templates</a
             >
-            <a href="#pricing" class="py-5 px-3 text-gray-400 hover:text-white"
+            <a href="/#pricing" class="py-5 px-3 text-gray-400 hover:text-white"
               >Pricing</a
             >
-            <a href="#about" class="py-5 px-3 text-gray-400 hover:text-white"
+            <a href="/#about" class="py-5 px-3 text-gray-400 hover:text-white"
               >About Us</a
             >
           </div>
 
           <!-- secondary nav -->
           <div class="hidden lg:flex items-center space-x-1">
-            <a href="" class="py-5 px-3 flex hover:text-white">
+            <a href="/login" class="py-5 px-3 flex hover:text-white">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="h-5 w-5"
@@ -82,7 +85,7 @@
               ><span>Login</span></a
             >
             <a
-              href=""
+              href="/signup"
               class="
                 flex
                 py-2
@@ -123,11 +126,11 @@
 
       <!-- mobile menu -->
       <div class="mobile-menu items-center hidden lg:hidden">
-        <a href="#templates" class="block py-2 px-4">Templates</a>
-        <a href="#pricing" class="block py-2 px-4">Pricing</a>
-        <a href="#about" class="block py-2 px-4">About Us</a>
+        <a href="/#templates" class="block py-2 px-4">Templates</a>
+        <a href="/#pricing" class="block py-2 px-4">Pricing</a>
+        <a href="/#about" class="block py-2 px-4">About Us</a>
         <a href="#" class="block py-2 px-4">Login</a>
-        <a href="#" class="block py-2 px-4">Signup</a>
+        <a href="/signup" class="block py-2 px-4">Signup</a>
       </div>
     </nav>
     <!-- Landing Section-->
@@ -142,6 +145,7 @@
                   mt-8
                   font-bold
                   md:text-7xl
+                  lg:text-5xl
                   text-gray-100
                   lg:text-justify
                 "
@@ -157,12 +161,14 @@
                   mt-1
                   text-gray-500
                   lg:hidden
+                  lg:text-lg
                 "
               ></div>
               <p
                 class="
                   text-center text-lg
                   md:text-2xl
+                  lg:text-lg
                   mt-3
                   text-gray-500
                   lg:text-justify
@@ -187,7 +193,7 @@
                   lg:text-justify
                 "
               >
-                <a href="#" class="bg-indigo-900 text-gray-300 p-2 rounded">
+                <a href="/signup" class="bg-indigo-900 hover:bg-green-800 text-gray-300 p-2 rounded">
                   Join Us
                 </a>
               </div>
@@ -1128,7 +1134,7 @@
                   >
                 </li>
                 <li>
-                  <a href="#" class="font-normal text-base hover:text-gray-200"
+                  <a href="/signup" class="font-normal text-base hover:text-gray-200"
                     >Signup</a
                   >
                 </li>
