@@ -1,1 +1,1 @@
-web: gunicorn resumebuilder.wsgi --log-file - --log-level debug
+web: gunicorn resumebuilder.wsgi --preload --workers 1
