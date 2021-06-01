@@ -23,10 +23,14 @@ def signup(request):
             msg_p = passvalid(password)
             msg_e = isEmailAddressValid(email)
             if msg_p == "Valid" and msg_e == "Valid":
-                newuser = User.objects.create_user(email=email, password=password)
-                newuser.save()
-                messages.success(request, 'Successfully created!!')
-                return redirect('login')
+                if User.objects.filter(email=email).count() == 0:
+                    newuser = User.objects.create_user(email=email, password=password)
+                    newuser.save()
+                    messages.success(request, 'Successfully created!!')
+                    return redirect('login')
+                else:
+                    messages.info(request, "Email already exist")
+                    return redirect('signup')
             else:
                 messages.error(request, 'Check your email and password. Password length have to be 8 or more.')
                 return redirect('signup')
