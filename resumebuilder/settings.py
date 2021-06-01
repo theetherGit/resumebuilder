@@ -27,7 +27,7 @@ sentry_sdk.init(
 SECRET_KEY = ')87QCsM2!nYJF4k@&j*U*xHN7UiZHb2Y)2B9+Wnqfbc!bk5dtz'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['127.0.0.1', '192.168.0.10', '0.0.0.0', 'https://rebuildresume.herokuapp.com/',
                  'https://rebuild.theether.in/',
