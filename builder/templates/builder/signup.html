@@ -89,7 +89,44 @@
             <a href="/signup" class="block py-2 px-4">Signup</a>
         </div>
     </nav>
+        <!-- Messages-->
+    {% if messages %}
+    {% for message in messages%}
+    {% if message.tags == 'error' %}
+    <div class="block mt-5 mx-5 text-sm text-red-600 bg-red-200 border border-red-400 h-12 flex items-center p-4 rounded-md relative" role="alert">
+        <span class="mr-1">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block text-red-600" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10 1.944A11.954 11.954 0 012.166 5C2.056 5.649 2 6.319 2 7c0 5.225 3.34 9.67 8 11.317C14.66 16.67 18 12.225 18 7c0-.682-.057-1.35-.166-2.001A11.954 11.954 0 0110 1.944zM11 14a1 1 0 11-2 0 1 1 0 012 0zm0-7a1 1 0 10-2 0v3a1 1 0 102 0V7z" clip-rule="evenodd" />
+            </svg>
+          </span>
+        <span>
+            <strong class="mr-1">{{message}}</strong>
+        </span>
+          <button type="button" data-dismiss="alert" aria-label="Close" onclick="this.parentElement.remove();">
+              <span class="absolute top-0 bottom-0 right-0 text-2xl px-3 py-1 hover:text-red-900" aria-hidden="true" >×</span>
+          </button>
+        </div>
+    {% endif %}
+    {% if message.tags == 'success' %}
+    <div class="block mt-5 mx-5 text-sm text-teal-600 bg-teal-200 border border-teal-400 h-12 flex items-center p-4 rounded-md relative" role="alert">
+          <span class="mr-1">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block text-teal-600" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+            </svg>
+          </span>
+        <span>
+            <strong class="mr-1">{{message}}</strong>
+        </span>
+          <button type="button" data-dismiss="alert" aria-label="Close" onclick="this.parentElement.remove();">
+              <span class="absolute top-0 bottom-0 right-0 text-2xl px-3 py-1 hover:text-red-900" aria-hidden="true" >×</span>
+          </button>
+        </div>
+    {% endif %}
+    {% endfor %}
+    {% endif %}
+    <!-- Message End -->
     <div class="
+        my-auto
         max-h-screen
         flex
         items-center
@@ -114,7 +151,7 @@
                     </a>
                 </p>
             </div>
-            <form class="mt-8 space-y-6" action="#" method="POST">
+            <form class="mt-8 space-y-6" action="{% url 'signup' %}" method="POST">
                 {% csrf_token %}
                 <input type="hidden" name="remember" value="true" />
                 <div class="rounded-md shadow-sm -space-y-px">

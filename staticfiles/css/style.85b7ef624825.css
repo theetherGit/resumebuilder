@@ -430,8 +430,7 @@ textarea::placeholder {
   color: #9ca3af;
 }
 
-button,
-[role="button"] {
+button {
   cursor: pointer;
 }
 
@@ -798,11 +797,6 @@ select {
   background-color: rgba(17, 24, 39, var(--tw-bg-opacity));
 }
 
-.bg-red-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgba(254, 202, 202, var(--tw-bg-opacity));
-}
-
 .bg-yellow-400 {
   --tw-bg-opacity: 1;
   background-color: rgba(251, 191, 36, var(--tw-bg-opacity));
@@ -831,11 +825,6 @@ select {
 .hover\:bg-gray-700:hover {
   --tw-bg-opacity: 1;
   background-color: rgba(55, 65, 81, var(--tw-bg-opacity));
-}
-
-.hover\:bg-gray-900:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgba(17, 24, 39, var(--tw-bg-opacity));
 }
 
 .hover\:bg-green-800:hover {
@@ -923,19 +912,9 @@ select {
   border-color: rgba(31, 41, 55, var(--tw-border-opacity));
 }
 
-.border-red-400 {
-  --tw-border-opacity: 1;
-  border-color: rgba(248, 113, 113, var(--tw-border-opacity));
-}
-
 .border-indigo-600 {
   --tw-border-opacity: 1;
   border-color: rgba(79, 70, 229, var(--tw-border-opacity));
-}
-
-.border-teal-400 {
-  --tw-border-opacity: 1;
-  border-color: rgba(77, 166, 166, var(--tw-border-opacity));
 }
 
 .focus\:border-indigo-500:focus {
@@ -995,10 +974,6 @@ select {
 
 .block {
   display: block;
-}
-
-.inline-block {
-  display: inline-block;
 }
 
 .flex {
@@ -1201,16 +1176,6 @@ select {
   margin-right: 1rem;
 }
 
-.mx-5 {
-  margin-left: 1.25rem;
-  margin-right: 1.25rem;
-}
-
-.mx-10 {
-  margin-left: 2.5rem;
-  margin-right: 2.5rem;
-}
-
 .my-12 {
   margin-top: 3rem;
   margin-bottom: 3rem;
@@ -1224,11 +1189,6 @@ select {
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
-}
-
-.-mx-4 {
-  margin-left: -1rem;
-  margin-right: -1rem;
 }
 
 .mb-0 {
@@ -1346,10 +1306,6 @@ select {
   padding: 0.75rem;
 }
 
-.p-4 {
-  padding: 1rem;
-}
-
 .p-6 {
   padding: 1.5rem;
 }
@@ -1425,10 +1381,6 @@ select {
   padding-left: 2.5rem;
 }
 
-.pb-48 {
-  padding-bottom: 12rem;
-}
-
 .placeholder-gray-500::-moz-placeholder {
   --tw-placeholder-opacity: 1;
   color: rgba(107, 114, 128, var(--tw-placeholder-opacity));
@@ -1484,10 +1436,6 @@ select {
   right: 0px;
 }
 
-.bottom-0 {
-  bottom: 0px;
-}
-
 .left-0 {
   left: 0px;
 }
@@ -1525,11 +1473,6 @@ select {
 }
 
 .shadow-xl {
-  --tw-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.hover\:shadow-xl:hover {
   --tw-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
@@ -1602,19 +1545,9 @@ select {
   color: rgba(55, 65, 81, var(--tw-text-opacity));
 }
 
-.text-gray-800 {
-  --tw-text-opacity: 1;
-  color: rgba(31, 41, 55, var(--tw-text-opacity));
-}
-
 .text-gray-900 {
   --tw-text-opacity: 1;
   color: rgba(17, 24, 39, var(--tw-text-opacity));
-}
-
-.text-red-600 {
-  --tw-text-opacity: 1;
-  color: rgba(220, 38, 38, var(--tw-text-opacity));
 }
 
 .text-blue-600 {
@@ -1635,11 +1568,6 @@ select {
 .text-indigo-800 {
   --tw-text-opacity: 1;
   color: rgba(55, 48, 163, var(--tw-text-opacity));
-}
-
-.text-teal-600 {
-  --tw-text-opacity: 1;
-  color: rgba(0, 115, 115, var(--tw-text-opacity));
 }
 
 .text-teal-800 {
@@ -1670,11 +1598,6 @@ select {
 .hover\:text-gray-900:hover {
   --tw-text-opacity: 1;
   color: rgba(17, 24, 39, var(--tw-text-opacity));
-}
-
-.hover\:text-red-900:hover {
-  --tw-text-opacity: 1;
-  color: rgba(127, 29, 29, var(--tw-text-opacity));
 }
 
 .hover\:text-yellow-500:hover {
@@ -1718,10 +1641,6 @@ select {
 
 .tracking-wide {
   letter-spacing: 0.025em;
-}
-
-.tracking-wider {
-  letter-spacing: 0.05em;
 }
 
 .w-4 {
@@ -1981,10 +1900,6 @@ select {
     width: 16rem;
   }
 
-  .sm\:w-4\/12 {
-    width: 33.333333%;
-  }
-
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -2044,10 +1959,6 @@ select {
 
   .md\:w-80 {
     width: 20rem;
-  }
-
-  .md\:w-4\/12 {
-    width: 33.333333%;
   }
 
   .md\:grid-cols-2 {
@@ -2169,10 +2080,6 @@ select {
   .xl\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
-  }
-
-  .xl\:w-4\/12 {
-    width: 33.333333%;
   }
 
   .xl\:grid-cols-2 {
