@@ -3,21 +3,20 @@
 
 <html lang="en">
 
-  <head>
-    <meta name="theme-color" content="#111827" />
-    <meta charset="UTF-8" />
-    <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
-    <link rel="icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ReBuild : The online resume builder.</title>
-    <link rel="stylesheet" href="{% static 'css/style.min.css' %}" />
-  </head>
+<head>
+  <meta name="theme-color" content="#111827" />
+  <meta charset="UTF-8" />
+  <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
+  <link rel="icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ReBuild : The online resume builder.</title>
+  <link rel="stylesheet" href="{% static 'css/style.min.css' %}" />
+</head>
 
-  <body class="bg-gray-900 font-sans antialiased">
-    <!--navbar start-->
-    <nav
-      class="
+<body class="bg-gray-900 font-sans antialiased">
+  <!--navbar start-->
+  <nav class="
         bg-gray-900
         text-gray-400
         sticky
@@ -25,68 +24,35 @@
         z-30
         bg-opacity-50
         backdrop-filter backdrop-blur
-      "
-    >
-      <div class="max-w-8xl mx-auto px-4 xl:px-8 border-b border-gray-800">
-        <div class="flex justify-between">
-          <!-- logo -->
-          <div>
-            <a
-              href="/"
-              class="flex items-center py-5 px-2 text-gray-100 hover:text-white"
-            >
-              <svg
-                class="h-6 w-6 mr-1 text-blue-600 hover:text-white"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"
-                />
-              </svg>
-              <span class="font-bold">ReBuild</span>
-            </a>
-          </div>
+      ">
+    <div class="max-w-8xl mx-auto px-4 xl:px-8 border-b border-gray-800">
+      <div class="flex justify-between">
+        <!-- logo -->
+        <div>
+          <a href="/" class="flex items-center py-5 px-2 text-gray-100 hover:text-white">
+            <svg class="h-6 w-6 mr-1 text-blue-600 hover:text-white" xmlns="http://www.w3.org/2000/svg" fill="none"
+              viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+            </svg>
+            <span class="font-bold">ReBuild</span>
+          </a>
+        </div>
 
-          <!-- primary nav -->
-          <div class="hidden lg:flex items-center space-x-1">
-            <a
-              href="/#templates"
-              class="py-5 px-3 text-gray-400 hover:text-white"
-              >Templates</a
-            >
-            <a href="/#pricing" class="py-5 px-3 text-gray-400 hover:text-white"
-              >Pricing</a
-            >
-            <a href="/#about" class="py-5 px-3 text-gray-400 hover:text-white"
-              >About Us</a
-            >
-          </div>
+        <!-- primary nav -->
+        <div class="hidden lg:flex items-center space-x-1">
+          <a href="/#templates" class="py-5 px-3 text-gray-400 hover:text-white">Templates</a>
+          <a href="/#pricing" class="py-5 px-3 text-gray-400 hover:text-white">Pricing</a>
+          <a href="/#about" class="py-5 px-3 text-gray-400 hover:text-white">About Us</a>
+        </div>
 
-          <!-- secondary nav -->
-          <div class="hidden lg:flex items-center space-x-1">
-            <a href="/login" class="py-5 px-3 flex hover:text-white">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
-                  clip-rule="evenodd"
-                /></svg
-              ><span>Login</span></a
-            >
-            <a
-              href="/signup"
-              class="
+        <!-- secondary nav -->
+        <div class="hidden lg:flex items-center space-x-1">
+          <a href="/login" class="py-5 px-3 flex hover:text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
+            </svg><span>Login</span></a>
+          <a href="/signup" class="
                 flex
                 py-2
                 px-3
@@ -97,50 +63,103 @@
                 text-lg
                 transition
                 duration-300
-              "
-              ><span>Signup</span></a
-            >
-          </div>
+              "><span>Signup</span></a>
+        </div>
 
-          <!-- mobile button goes here -->
-          <div class="lg:hidden flex items-center">
-            <button class="mobile-menu-button">
-              <svg
-                class="w-6 h-6"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              </svg>
-            </button>
-          </div>
+        <!-- mobile button goes here -->
+        <div class="lg:hidden flex items-center">
+          <button class="mobile-menu-button">
+            <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
         </div>
       </div>
+    </div>
 
-      <!-- mobile menu -->
-      <div class="mobile-menu items-center hidden lg:hidden">
-        <a href="/#templates" class="block py-2 px-4">Templates</a>
-        <a href="/#pricing" class="block py-2 px-4">Pricing</a>
-        <a href="/#about" class="block py-2 px-4">About Us</a>
-        <a href="/login" class="block py-2 px-4">Login</a>
-        <a href="/signup" class="block py-2 px-4">Signup</a>
-      </div>
-    </nav>
-    <!-- Landing Section-->
-    <section class="h-auto">
-      <div class="h-screen w-full">
-        <div class="lg:grid lg:grid-cols-2">
-          <div class="items-center px-10 my-auto">
-            <div class="lg:items-start">
-              <h1
-                class="
+    <!-- mobile menu -->
+    <div class="mobile-menu items-center hidden lg:hidden">
+      <a href="/#templates" class="block py-2 px-4">Templates</a>
+      <a href="/#pricing" class="block py-2 px-4">Pricing</a>
+      <a href="/#about" class="block py-2 px-4">About Us</a>
+      <a href="/login" class="block py-2 px-4">Login</a>
+      <a href="/signup" class="block py-2 px-4">Signup</a>
+    </div>
+  </nav>
+  <!-- Messages-->
+  {% if messages %}
+  {% for message in messages%}
+  {% if message.tags == 'error' %}
+  <div
+    class="block mt-5 mx-5 text-sm text-red-600 bg-red-200 border border-red-400 h-12 flex items-center p-4 rounded-md relative"
+    role="alert">
+    <span class="mr-1">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block text-red-600" viewBox="0 0 20 20"
+        fill="currentColor">
+        <path fill-rule="evenodd"
+          d="M10 1.944A11.954 11.954 0 012.166 5C2.056 5.649 2 6.319 2 7c0 5.225 3.34 9.67 8 11.317C14.66 16.67 18 12.225 18 7c0-.682-.057-1.35-.166-2.001A11.954 11.954 0 0110 1.944zM11 14a1 1 0 11-2 0 1 1 0 012 0zm0-7a1 1 0 10-2 0v3a1 1 0 102 0V7z"
+          clip-rule="evenodd" />
+      </svg>
+    </span>
+    <span>
+      <strong class="mr-1">{{message}}</strong>
+    </span>
+    <button type="button" data-dismiss="alert" aria-label="Close" onclick="this.parentElement.remove();">
+      <span class="absolute top-0 bottom-0 right-0 text-2xl px-3 py-1 hover:text-red-900" aria-hidden="true">×</span>
+    </button>
+  </div>
+  {% endif %}
+  {% if message.tags == 'info' %}
+  <div
+    class="block mt-5 mx-5 text-sm text-yellow-600 bg-yellow-200 border border-yellow-400 h-12 flex items-center p-4 rounded-md relative"
+    role="alert">
+    <span class="mr-1">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block text-yellow-600" viewBox="0 0 20 20"
+        fill="currentColor">
+        <path fill-rule="evenodd"
+          d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z"
+          clip-rule="evenodd" />
+      </svg>
+    </span>
+    <span>
+      <strong class="mr-1">{{message}}</strong>
+    </span>
+    <button type="button" data-dismiss="alert" aria-label="Close" onclick="this.parentElement.remove();">
+      <span class="absolute top-0 bottom-0 right-0 text-2xl px-3 py-1 hover:text-red-900" aria-hidden="true">×</span>
+    </button>
+  </div>
+  {% endif %}
+  {% if message.tags == 'success' %}
+  <div
+    class="block mt-5 mx-5 text-sm text-teal-600 bg-teal-200 border border-teal-400 h-12 flex items-center p-4 rounded-md relative"
+    role="alert">
+    <span class="mr-1">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block text-teal-600" viewBox="0 0 20 20"
+        fill="currentColor">
+        <path fill-rule="evenodd"
+          d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+          clip-rule="evenodd" />
+      </svg>
+    </span>
+    <span>
+      <strong class="mr-1">{{message}}</strong>
+    </span>
+    <button type="button" data-dismiss="alert" aria-label="Close" onclick="this.parentElement.remove();">
+      <span class="absolute top-0 bottom-0 right-0 text-2xl px-3 py-1 hover:text-red-900" aria-hidden="true">×</span>
+    </button>
+  </div>
+  {% endif %}
+  {% endfor %}
+  {% endif %}
+  <!-- Message End -->
+  <!-- Landing Section-->
+  <section class="h-auto">
+    <div class="h-screen w-full">
+      <div class="lg:grid lg:grid-cols-2">
+        <div class="items-center px-10 my-auto">
+          <div class="lg:items-start">
+            <h1 class="
                   text-center text-5xl
                   mt-8
                   font-bold
@@ -148,12 +167,10 @@
                   lg:text-5xl
                   text-gray-100
                   lg:text-justify
-                "
-              >
-                ReBuild.
-              </h1>
-              <div
-                class="
+                ">
+              ReBuild.
+            </h1>
+            <div class="
                   m-auto
                   border-b-2
                   w-48
@@ -162,27 +179,23 @@
                   text-gray-500
                   lg:hidden
                   lg:text-lg
-                "
-              ></div>
-              <p
-                class="
+                "></div>
+            <p class="
                   text-center text-lg
                   md:text-2xl
                   lg:text-lg
                   mt-3
                   text-gray-500
                   lg:text-justify
-                "
-              >
-                Building a professional resume has never been so easy. Get
-                started for
-                <span class="font-medium text-gray-400">free</span> now with us.
-                Impressive resumes are now on click away! Get hired with this
-                creative Resume Maker that will make you stand out from other
-                applicants.
-              </p>
-              <div
-                class="
+                ">
+              Building a professional resume has never been so easy. Get
+              started for
+              <span class="font-medium text-gray-400">free</span> now with us.
+              Impressive resumes are now on click away! Get hired with this
+              creative Resume Maker that will make you stand out from other
+              applicants.
+            </p>
+            <div class="
                   font-serif
                   text-center
                   mt-6
@@ -192,49 +205,43 @@
                   items-center
                   rounded
                   lg:text-justify
-                "
-              >
-                <a href="/signup" class="bg-indigo-900 hover:bg-green-800 text-gray-300 p-2 rounded">
-                  Join Us
-                </a>
-              </div>
+                ">
+              <a href="/signup" class="bg-indigo-900 hover:bg-green-800 text-gray-300 p-2 rounded">
+                Join Us
+              </a>
             </div>
           </div>
-          <div class="w-full px-10">
-            <img class="mt-12" alt="Resume" src="{% static 'images/resume_cv.svg' %}" />
-          </div>
+        </div>
+        <div class="w-full px-10">
+          <img class="mt-12" alt="Resume" src="{% static 'images/resume_cv.svg' %}" />
         </div>
       </div>
-    </section>
-    <!-- Services -->
-    <section id="about">
-      <div>
-        <p
-          class="
+    </div>
+  </section>
+  <!-- Services -->
+  <section id="about">
+    <div>
+      <p class="
             text-4xl text-center text-gray-100
             tracking-wide
             font-serif font-bold
             sm:mt-10
-          "
-        >
-          Why Rebuild?
-        </p>
-        <div class="border-t-2 rounded-lg mt-2 w-72 m-auto"></div>
-      </div>
-      <div class="flex items-center justify-center mt-14">
-        <div
-          class="
+          ">
+        Why Rebuild?
+      </p>
+      <div class="border-t-2 rounded-lg mt-2 w-72 m-auto"></div>
+    </div>
+    <div class="flex items-center justify-center mt-14">
+      <div class="
             grid grid-cols-1
             gap-6
             sm:grid-cols-2
             md:grid-cols-2
             lg:grid-cols-3
             xl:grid-cols-3
-          "
-        >
-          <!--Card 1-->
-          <div
-            class="
+          ">
+        <!--Card 1-->
+        <div class="
               relative
               bg-gradient-to-r
               from-red-400
@@ -245,10 +252,8 @@
               w-64
               my-4
               shadow-xl
-            "
-          >
-            <div
-              class="
+            ">
+          <div class="
                 text-gray-900
                 flex
                 items-center
@@ -260,48 +265,30 @@
                 bg-gray-200
                 left-4
                 -top-6
-              "
-            >
+              ">
+            <!-- svg  -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <div class="mt-8">
+            <p class="text-xl font-semibold my-2">Take Minimum Time</p>
+            <div class="border-t-2 mb-2"></div>
+            <div class="flex space-x-2 text-gray-900 text-sm">
               <!-- svg  -->
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd" />
               </svg>
-            </div>
-            <div class="mt-8">
-              <p class="text-xl font-semibold my-2">Take Minimum Time</p>
-              <div class="border-t-2 mb-2"></div>
-              <div class="flex space-x-2 text-gray-900 text-sm">
-                <!-- svg  -->
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-                <p>It takes 5 min to setup and you are ready to go.</p>
-              </div>
+              <p>It takes 5 min to setup and you are ready to go.</p>
             </div>
           </div>
-          <!-- 2 card -->
-          <div
-            class="
+        </div>
+        <!-- 2 card -->
+        <div class="
               relative
               bg-gradient-to-r
               from-red-400
@@ -312,10 +299,8 @@
               w-64
               my-4
               shadow-xl
-            "
-          >
-            <div
-              class="
+            ">
+          <div class="
                 text-gray-900
                 flex
                 items-center
@@ -327,48 +312,30 @@
                 bg-gray-200
                 left-4
                 -top-6
-              "
-            >
+              ">
+            <!-- svg  -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+          </div>
+          <div class="mt-8">
+            <p class="text-xl font-semibold my-2">Free to Use</p>
+            <div class="border-t-2 mb-2"></div>
+            <div class="flex space-x-2 text-gray-900 text-sm">
               <!-- svg  -->
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                />
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd" />
               </svg>
-            </div>
-            <div class="mt-8">
-              <p class="text-xl font-semibold my-2">Free to Use</p>
-              <div class="border-t-2 mb-2"></div>
-              <div class="flex space-x-2 text-gray-900 text-sm">
-                <!-- svg  -->
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-                <p>10+ Free custom designed professional resume and CVs.</p>
-              </div>
+              <p>10+ Free custom designed professional resume and CVs.</p>
             </div>
           </div>
-          <!-- card 3-->
-          <div
-            class="
+        </div>
+        <!-- card 3-->
+        <div class="
               relative
               bg-gradient-to-r
               from-red-400
@@ -379,10 +346,8 @@
               w-64
               my-4
               shadow-xl
-            "
-          >
-            <div
-              class="
+            ">
+          <div class="
                 text-gray-900
                 flex
                 items-center
@@ -394,50 +359,32 @@
                 bg-gray-200
                 left-4
                 -top-6
-              "
-            >
+              ">
+            <!-- svg  -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2-1-2 1M4 7l2-1M4 7l2 1M4 7v2.5M12 21l-2-1m2 1l2-1m-2 1v-2.5M6 18l-2-1v-2.5M18 18l2-1v-2.5" />
+            </svg>
+          </div>
+          <div class="mt-8">
+            <p class="text-xl font-semibold my-2">Easy to Use</p>
+            <div class="border-t-2 mb-2"></div>
+            <div class="flex space-x-2 text-gray-900 text-sm">
               <!-- svg  -->
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2-1-2 1M4 7l2-1M4 7l2 1M4 7v2.5M12 21l-2-1m2 1l2-1m-2 1v-2.5M6 18l-2-1v-2.5M18 18l2-1v-2.5"
-                />
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd" />
               </svg>
-            </div>
-            <div class="mt-8">
-              <p class="text-xl font-semibold my-2">Easy to Use</p>
-              <div class="border-t-2 mb-2"></div>
-              <div class="flex space-x-2 text-gray-900 text-sm">
-                <!-- svg  -->
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-                <p>
-                  Just fill your details and we will take care of other things.
-                </p>
-              </div>
+              <p>
+                Just fill your details and we will take care of other things.
+              </p>
             </div>
           </div>
-          <!--Card 4-->
-          <div
-            class="
+        </div>
+        <!--Card 4-->
+        <div class="
               relative
               bg-gradient-to-r
               from-red-400
@@ -448,10 +395,8 @@
               w-64
               my-4
               shadow-xl
-            "
-          >
-            <div
-              class="
+            ">
+          <div class="
                 text-gray-900
                 flex
                 items-center
@@ -463,51 +408,33 @@
                 bg-gray-200
                 left-4
                 -top-6
-              "
-            >
+              ">
+            <!-- svg  -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+            </svg>
+          </div>
+          <div class="mt-8">
+            <p class="text-xl font-semibold my-2">Secure</p>
+            <div class="border-t-2 mb-2"></div>
+            <div class="flex space-x-2 text-gray-900 text-sm">
               <!-- svg  -->
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
-                />
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd" />
               </svg>
-            </div>
-            <div class="mt-8">
-              <p class="text-xl font-semibold my-2">Secure</p>
-              <div class="border-t-2 mb-2"></div>
-              <div class="flex space-x-2 text-gray-900 text-sm">
-                <!-- svg  -->
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-                <p>
-                  We manage your data in secure way other people can't access
-                  them.
-                </p>
-              </div>
+              <p>
+                We manage your data in secure way other people can't access
+                them.
+              </p>
             </div>
           </div>
-          <!--Card 5-->
-          <div
-            class="
+        </div>
+        <!--Card 5-->
+        <div class="
               relative
               bg-gradient-to-r
               from-red-400
@@ -518,10 +445,8 @@
               w-64
               my-4
               shadow-xl
-            "
-          >
-            <div
-              class="
+            ">
+          <div class="
                 text-gray-900
                 flex
                 items-center
@@ -533,48 +458,30 @@
                 bg-gray-200
                 left-4
                 -top-6
-              "
-            >
+              ">
+            <!-- svg  -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+            </svg>
+          </div>
+          <div class="mt-8">
+            <p class="text-xl font-semibold my-2">Downloadable PDF's</p>
+            <div class="border-t-2 mb-2"></div>
+            <div class="flex space-x-2 text-gray-900 text-sm">
               <!-- svg  -->
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
-                />
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd" />
               </svg>
-            </div>
-            <div class="mt-8">
-              <p class="text-xl font-semibold my-2">Downloadable PDF's</p>
-              <div class="border-t-2 mb-2"></div>
-              <div class="flex space-x-2 text-gray-900 text-sm">
-                <!-- svg  -->
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-                <p>You can download your resume in pdf format.</p>
-              </div>
+              <p>You can download your resume in pdf format.</p>
             </div>
           </div>
-          <!--card 6-->
-          <div
-            class="
+        </div>
+        <!--card 6-->
+        <div class="
               relative
               bg-gradient-to-r
               from-red-400
@@ -585,10 +492,8 @@
               w-64
               my-4
               shadow-xl
-            "
-          >
-            <div
-              class="
+            ">
+          <div class="
                 text-gray-900
                 flex
                 items-center
@@ -600,74 +505,54 @@
                 bg-gray-200
                 left-4
                 -top-6
-              "
-            >
+              ">
+            <!-- svg  -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
+            </svg>
+          </div>
+          <div class="mt-8">
+            <p class="text-xl font-semibold my-2">Upload to cloud</p>
+            <div class="border-t-2 mb-2"></div>
+            <div class="flex space-x-2 text-gray-900 text-sm">
               <!-- svg  -->
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"
-                />
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd" />
               </svg>
-            </div>
-            <div class="mt-8">
-              <p class="text-xl font-semibold my-2">Upload to cloud</p>
-              <div class="border-t-2 mb-2"></div>
-              <div class="flex space-x-2 text-gray-900 text-sm">
-                <!-- svg  -->
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-                <p>
-                  You can upload your resume to cloud and share with anyone with
-                  one link
-                </p>
-              </div>
+              <p>
+                You can upload your resume to cloud and share with anyone with
+                one link
+              </p>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <!--Pricing Section-->
-    <section id="pricing">
-      <div class="text-center mt-10">
-        <h1 class="text-4xl text-gray-100 tracking-wide font-serif font-bold">
-          Pricing
-        </h1>
-      </div>
-      <div class="border-t-2 rounded-lg mt-2 w-44 m-auto"></div>
-      <!-- component -->
-      <div class="flex items-center justify-center mt-14">
-        <div
-          class="
+    </div>
+  </section>
+  <!--Pricing Section-->
+  <section id="pricing">
+    <div class="text-center mt-10">
+      <h1 class="text-4xl text-gray-100 tracking-wide font-serif font-bold">
+        Pricing
+      </h1>
+    </div>
+    <div class="border-t-2 rounded-lg mt-2 w-44 m-auto"></div>
+    <!-- component -->
+    <div class="flex items-center justify-center mt-14">
+      <div class="
             grid grid-cols-1
             gap-6
             sm:grid-cols-2
             md:grid-cols-2
             lg:grid-cols-2
             xl:grid-cols-2
-          "
-        >
-          <!-- 1 card -->
-          <div
-            class="
+          ">
+        <!-- 1 card -->
+        <div class="
               relative
               bg-gradient-to-r
               from-green-400
@@ -678,10 +563,8 @@
               w-64
               my-4
               shadow-xl
-            "
-          >
-            <div
-              class="
+            ">
+          <div class="
                 text-gray-900
                 flex
                 items-center
@@ -693,101 +576,60 @@
                 bg-gray-200
                 left-4
                 -top-6
-              "
-            >
+              ">
+            <!-- svg  -->
+            <p>Free</p>
+          </div>
+          <div class="mt-8">
+            <p class="text-xl font-semibold my-2">Basic</p>
+            <div class="flex space-x-2 text-gray-900 text-sm">
               <!-- svg  -->
-              <p>Free</p>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd" />
+              </svg>
+              <p>Professional & Free Templates</p>
             </div>
-            <div class="mt-8">
-              <p class="text-xl font-semibold my-2">Basic</p>
-              <div class="flex space-x-2 text-gray-900 text-sm">
-                <!-- svg  -->
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-                <p>Professional & Free Templates</p>
-              </div>
-              <div class="flex space-x-2 text-gray-900 text-sm my-3">
-                <!-- svg  -->
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-                <p>10+ Free Templates</p>
-              </div>
-              <div class="flex space-x-2 text-gray-900 text-sm my-3">
-                <!-- svg  -->
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-                <p>Fixed Layout</p>
-              </div>
-              <div class="flex space-x-2 text-gray-900 text-sm my-3">
-                <!-- svg  -->
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-                <p>Download to PDF</p>
-              </div>
-              <div class="flex space-x-2 text-gray-900 text-sm my-3">
-                <!-- svg  -->
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-6 w-6"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M6 18L18 6M6 6l12 12"
-                  />
-                </svg>
-                <p>Save to Cloud</p>
-              </div>
-              <div class="border-t-2"></div>
+            <div class="flex space-x-2 text-gray-900 text-sm my-3">
+              <!-- svg  -->
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd" />
+              </svg>
+              <p>10+ Free Templates</p>
+            </div>
+            <div class="flex space-x-2 text-gray-900 text-sm my-3">
+              <!-- svg  -->
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd" />
+              </svg>
+              <p>Fixed Layout</p>
+            </div>
+            <div class="flex space-x-2 text-gray-900 text-sm my-3">
+              <!-- svg  -->
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd"
+                  d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z"
+                  clip-rule="evenodd" />
+              </svg>
+              <p>Download to PDF</p>
+            </div>
+            <div class="flex space-x-2 text-gray-900 text-sm my-3">
+              <!-- svg  -->
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+              <p>Save to Cloud</p>
+            </div>
+            <div class="border-t-2"></div>
 
-              <div class="mt-5">
-                <a
-                  type="button"
-                  class="
+            <div class="mt-5">
+              <a type="button" class="
                     bg-gray-900
                     text-gray-100
                     p-3
@@ -795,16 +637,13 @@
                     hover:bg-opacity-20
                     hover:backdrop-filter hover:backdrop-blur
                     hover:text-gray-900
-                  "
-                  >Free Signup</a
-                >
-              </div>
+                  ">Free Signup</a>
             </div>
           </div>
+        </div>
 
-          <!-- 2 card -->
-          <div
-            class="
+        <!-- 2 card -->
+        <div class="
               relative
               bg-gradient-to-r
               from-green-400
@@ -815,10 +654,8 @@
               w-64
               my-4
               shadow-xl
-            "
-          >
-            <div
-              class="
+            ">
+          <div class="
                 text-gray-900
                 flex
                 items-center
@@ -830,156 +667,110 @@
                 bg-gray-100
                 left-4
                 -top-6
-              "
-            >
+              ">
+            <!-- svg  -->
+            Paid
+          </div>
+          <div class="mt-8">
+            <p class="text-xl font-semibold my-2">
+              Premium(&#8377; 50/month)
+            </p>
+            <div class="flex space-x-2 text-gray-900 text-sm">
               <!-- svg  -->
-              Paid
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd" />
+              </svg>
+              <p>Professional Premium Templates</p>
             </div>
-            <div class="mt-8">
-              <p class="text-xl font-semibold my-2">
-                Premium(&#8377; 50/month)
-              </p>
-              <div class="flex space-x-2 text-gray-900 text-sm">
-                <!-- svg  -->
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-                <p>Professional Premium Templates</p>
-              </div>
-              <div class="flex space-x-2 text-gray-900 text-sm my-3">
-                <!-- svg  -->
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-                <p>20+ Premium Templates</p>
-              </div>
-              <div class="flex space-x-2 text-gray-900 text-sm my-3">
-                <!-- svg  -->
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-                <p>Custom Layout</p>
-              </div>
-              <div class="flex space-x-2 text-gray-900 text-sm my-3">
-                <!-- svg  -->
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-                <p>Save to Cloud</p>
-              </div>
-              <div class="flex space-x-2 text-gray-900 text-sm my-3">
-                <!-- svg  -->
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-                <p>Download to PDF</p>
-              </div>
+            <div class="flex space-x-2 text-gray-900 text-sm my-3">
+              <!-- svg  -->
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd" />
+              </svg>
+              <p>20+ Premium Templates</p>
+            </div>
+            <div class="flex space-x-2 text-gray-900 text-sm my-3">
+              <!-- svg  -->
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd" />
+              </svg>
+              <p>Custom Layout</p>
+            </div>
+            <div class="flex space-x-2 text-gray-900 text-sm my-3">
+              <!-- svg  -->
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd" />
+              </svg>
+              <p>Save to Cloud</p>
+            </div>
+            <div class="flex space-x-2 text-gray-900 text-sm my-3">
+              <!-- svg  -->
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd"
+                  d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z"
+                  clip-rule="evenodd" />
+              </svg>
+              <p>Download to PDF</p>
+            </div>
 
-              <div class="border-t-2"></div>
+            <div class="border-t-2"></div>
 
-              <div class="flex justify-between">
-                <div class="my-2">
-                  <p class="font-semibold text-base mb-2">Price</p>
-                  <div class="text-base text-gray-900 font-semibold space-x-0">
-                    <p>&#8377; 50/month</p>
-                  </div>
+            <div class="flex justify-between">
+              <div class="my-2">
+                <p class="font-semibold text-base mb-2">Price</p>
+                <div class="text-base text-gray-900 font-semibold space-x-0">
+                  <p>&#8377; 50/month</p>
                 </div>
-                <div class="mt-3">
-                  <a
-                    type="button"
-                    class="
+              </div>
+              <div class="mt-3">
+                <a type="button" class="
                       bg-gray-900
                       text-gray-100
                       p-3
                       rounded
                       hover:bg-opacity-20
                       hover:backdrop-filter hover:backdrop-blur
-                    "
-                    >Signup</a
-                  >
-                </div>
+                    ">Signup</a>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!--Templates-->
-    <section id="templates">
-      <div>
-        <p
-          class="
+  <!--Templates-->
+  <section id="templates">
+    <div>
+      <p class="
             text-4xl text-center text-gray-100
             tracking-wide
             font-serif font-bold
             sm:mt-10
-          "
-        >
-          Templates
-        </p>
-        <div class="border-t-2 rounded-lg mt-2 w-64 m-auto"></div>
-      </div>
-      <div class="container my-12 mx-auto px-4 md:px-12">
-        <div class="flex flex-wrap mx-1 lg:-mx-4">
-          <div class="wrapper antialiased text-gray-900">
-            <div>
-              <img
-                src="{% static 'images/temex.png' %}"
-                alt=" random imgee"
-                class="w-full object-cover object-center rounded-lg shadow-md"
-              />
+          ">
+        Templates
+      </p>
+      <div class="border-t-2 rounded-lg mt-2 w-64 m-auto"></div>
+    </div>
+    <div class="container my-12 mx-auto px-4 md:px-12">
+      <div class="flex flex-wrap mx-1 lg:-mx-4">
+        <div class="wrapper antialiased text-gray-900">
+          <div>
+            <img src="{% static 'images/temex.png' %}" alt=" random imgee"
+              class="w-full object-cover object-center rounded-lg shadow-md" />
 
-              <div class="relative px-4 -mt-16">
-                <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
-                  <div class="flex items-baseline">
-                    <span
-                      class="
+            <div class="relative px-4 -mt-16">
+              <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+                <div class="flex items-baseline">
+                  <span class="
                         bg-teal-200
                         text-teal-800 text-xs
                         px-2
@@ -988,14 +779,12 @@
                         uppercase
                         font-semibold
                         tracking-wide
-                      "
-                    >
-                      New
-                    </span>
-                  </div>
+                      ">
+                    New
+                  </span>
+                </div>
 
-                  <h4
-                    class="
+                <h4 class="
                       mt-1
                       text-xl
                       font-semibold
@@ -1003,16 +792,13 @@
                       leading-tight
                       truncate
                       text-gray-900
-                    "
-                  >
-                    A template Title
-                  </h4>
+                    ">
+                  A template Title
+                </h4>
 
-                  <div class="mt-1 capitalize">type</div>
-                  <div class="mt-4">
-                    <a
-                      type="button"
-                      class="
+                <div class="mt-1 capitalize">type</div>
+                <div class="mt-4">
+                  <a type="button" class="
                         bg-teal-900
                         text-gray-100
                         p-3
@@ -1021,209 +807,135 @@
                         hover:bg-opacity-50
                         hover:backdrop-filter hover:backdrop-blur
                         hover:text-teal-900
-                      "
-                      >Continue</a
-                    >
-                  </div>
+                      ">Continue</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- Footer -->
-    <section>
-      <footer class="bg-gray-900 text-gray-400 px-6 lg:px-8 py-12">
-        <div class="max-w-screen-xl mx-auto mb-6 lg:mb-8 flex justify-between">
-          <div>
-            <a
-              href="#"
-              class="flex items-center py-5 px-2 text-gray-100 hover:text-white"
-            >
-              <svg
-                class="h-6 w-6 mr-1 text-blue-600 hover:text-white"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"
-                />
-              </svg>
-              <span class="font-bold">ReBuild</span>
-            </a>
-          </div>
-          <a href="#" class="flex items-center">
-            <span>Return to top</span>
-            <svg
-              class="w-4 h-4"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M8 7l4-4m0 0l4 4m-4-4v18"
-              ></path>
+    </div>
+  </section>
+  <!-- Footer -->
+  <section>
+    <footer class="bg-gray-900 text-gray-400 px-6 lg:px-8 py-12">
+      <div class="max-w-screen-xl mx-auto mb-6 lg:mb-8 flex justify-between">
+        <div>
+          <a href="#" class="flex items-center py-5 px-2 text-gray-100 hover:text-white">
+            <svg class="h-6 w-6 mr-1 text-blue-600 hover:text-white" xmlns="http://www.w3.org/2000/svg" fill="none"
+              viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
             </svg>
+            <span class="font-bold">ReBuild</span>
           </a>
         </div>
-        <div
-          class="
+        <a href="#" class="flex items-center">
+          <span>Return to top</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7l4-4m0 0l4 4m-4-4v18"></path>
+          </svg>
+        </a>
+      </div>
+      <div class="
             max-w-screen-xl
             mx-auto
             border-t-2 border-gray-700
             pt-8
             space-y-10
-          "
-        >
-          <div class="md:grid md:grid-cols-5 space-y-2 md:space-y-0">
-            <div
-              class="
+          ">
+        <div class="md:grid md:grid-cols-5 space-y-2 md:space-y-0">
+          <div class="
                 md:col-span-1
                 py-1
                 md:pr-4
                 md:border-r-2 md:border-gray-700
-              "
-            >
-              <h5 class="text-xl font-bold text-white leading-none">
-                ReBuild.
-              </h5>
-            </div>
-            <nav class="col-span-4 col-start-2 md:pl-12 lg:pl-24">
-              <ul
-                class="
+              ">
+            <h5 class="text-xl font-bold text-white leading-none">
+              ReBuild.
+            </h5>
+          </div>
+          <nav class="col-span-4 col-start-2 md:pl-12 lg:pl-24">
+            <ul class="
                   flex flex-col
                   sm:flex-row
                   space-y-2
                   sm:space-y-0 sm:space-x-6
                   lg:space-x-12
-                "
-              >
-                <li>
-                  <a
-                    href="#pricing"
-                    class="font-normal text-base hover:text-gray-200"
-                    >Pricing</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#templates"
-                    class="font-normal text-base hover:text-gray-200"
-                    >Templates</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#about"
-                    class="font-normal text-base hover:text-gray-200"
-                    >Why us?</a
-                  >
-                </li>
-                <li>
-                  <a href="#" class="font-normal text-base hover:text-gray-200"
-                    >Login</a
-                  >
-                </li>
-                <li>
-                  <a href="/signup" class="font-normal text-base hover:text-gray-200"
-                    >Signup</a
-                  >
-                </li>
-              </ul>
-            </nav>
-          </div>
-          <div class="md:grid md:grid-cols-5 space-y-2 md:space-y-0">
-            <div
-              class="
+                ">
+              <li>
+                <a href="#pricing" class="font-normal text-base hover:text-gray-200">Pricing</a>
+              </li>
+              <li>
+                <a href="#templates" class="font-normal text-base hover:text-gray-200">Templates</a>
+              </li>
+              <li>
+                <a href="#about" class="font-normal text-base hover:text-gray-200">Why us?</a>
+              </li>
+              <li>
+                <a href="#" class="font-normal text-base hover:text-gray-200">Login</a>
+              </li>
+              <li>
+                <a href="/signup" class="font-normal text-base hover:text-gray-200">Signup</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="md:grid md:grid-cols-5 space-y-2 md:space-y-0">
+          <div class="
                 md:col-span-1
                 py-1
                 md:pr-4
                 md:border-r-2 md:border-gray-700
-              "
-            >
-              <h5 class="text-xl font-bold text-white leading-none">
-                Follow us
-              </h5>
-            </div>
-            <nav class="col-span-4 col-start-2 md:pl-12 lg:pl-24">
-              <ul
-                class="
+              ">
+            <h5 class="text-xl font-bold text-white leading-none">
+              Follow us
+            </h5>
+          </div>
+          <nav class="col-span-4 col-start-2 md:pl-12 lg:pl-24">
+            <ul class="
                   flex flex-col
                   sm:flex-row
                   space-y-4
                   sm:space-y-0 sm:space-x-6
                   lg:space-x-12
-                "
-              >
-                <li>
-                  <a
-                    href="https://twitter.com/Shivam67585440"
-                    rel="noreferrer"
-                    class="
+                ">
+              <li>
+                <a href="https://twitter.com/Shivam67585440" rel="noreferrer" class="
                       flex
                       space-x-2
                       font-normal
                       text-base
                       hover:text-gray-200
-                    "
-                  >
-                    <svg
-                      class="h-6 w-6"
-                      aria-hidden="true"
-                      fill="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"
-                      />
-                    </svg>
-                    <span> Twitter </span>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://instagram.com/the_ether_0"
-                    target="_blank"
-                    rel="noreferrer"
-                    class="
+                    ">
+                  <svg class="h-6 w-6" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                      d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+                  </svg>
+                  <span> Twitter </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://instagram.com/the_ether_0" target="_blank" rel="noreferrer" class="
                       flex
                       space-x-2
                       font-normal
                       text-base
                       hover:text-gray-200
-                    "
-                  >
-                    <svg
-                      class="h-6 w-6"
-                      aria-hidden="true"
-                      fill="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
-                        clip-rule="evenodd"
-                      />
-                    </svg>
-                    <span> Instagram </span>
-                  </a>
-                </li>
-              </ul>
-            </nav>
-          </div>
+                    ">
+                  <svg class="h-6 w-6" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
+                    <path fill-rule="evenodd"
+                      d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                      clip-rule="evenodd" />
+                  </svg>
+                  <span> Instagram </span>
+                </a>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <div
-          class="
+      </div>
+      <div class="
             max-w-screen-xl
             mx-auto
             space-y-4
@@ -1231,15 +943,15 @@
             lg:mt-12
             border-t-2 border-gray-700
             pt-8
-          "
-        >
-          <p class="text-sm text-center md:text-left">
-            &copy;2021 ReBuild All rights reserved. |
-            <a href="https://theether.in" rel="noreferrer" target="_blank">The Ether</a>
-          </p>
-        </div>
-      </footer>
-    </section>
-    <script src="{% static 'js/threed.js' %}"></script>
-  </body>
+          ">
+        <p class="text-sm text-center md:text-left">
+          &copy;2021 ReBuild All rights reserved. |
+          <a href="https://theether.in" rel="noreferrer" target="_blank">The Ether</a>
+        </p>
+      </div>
+    </footer>
+  </section>
+  <script src="{% static 'js/threed.js' %}"></script>
+</body>
+
 </html>

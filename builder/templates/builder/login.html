@@ -10,7 +10,7 @@
     <link rel="icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ReBuild | Signup</title>
+    <title>ReBuild | Signin</title>
     <link rel="stylesheet" href="{% static 'css/style.min.css' %}" />
 </head>
 
@@ -97,6 +97,21 @@
         <span class="mr-1">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block text-red-600" viewBox="0 0 20 20" fill="currentColor">
                 <path fill-rule="evenodd" d="M10 1.944A11.954 11.954 0 012.166 5C2.056 5.649 2 6.319 2 7c0 5.225 3.34 9.67 8 11.317C14.66 16.67 18 12.225 18 7c0-.682-.057-1.35-.166-2.001A11.954 11.954 0 0110 1.944zM11 14a1 1 0 11-2 0 1 1 0 012 0zm0-7a1 1 0 10-2 0v3a1 1 0 102 0V7z" clip-rule="evenodd" />
+            </svg>
+          </span>
+        <span>
+            <strong class="mr-1">{{message}}</strong>
+        </span>
+          <button type="button" data-dismiss="alert" aria-label="Close" onclick="this.parentElement.remove();">
+              <span class="absolute top-0 bottom-0 right-0 text-2xl px-3 py-1 hover:text-red-900" aria-hidden="true" >×</span>
+          </button>
+        </div>
+    {% endif %}
+    {% if message.tags == 'info' %}
+    <div class="block mt-5 mx-5 text-sm text-yellow-600 bg-yellow-200 border border-yellow-400 h-12 flex items-center p-4 rounded-md relative" role="alert">
+          <span class="mr-1">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block text-yellow-600" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd" />
             </svg>
           </span>
         <span>

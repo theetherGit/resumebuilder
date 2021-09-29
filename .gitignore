@@ -260,3 +260,8 @@ cython_debug/
 # Dev tools
 jstools
 jstools/
+
+#virtual env
+.myenv
+myenv
+myenv/
